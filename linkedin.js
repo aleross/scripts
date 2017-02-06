@@ -1,3 +1,12 @@
+// New LinkedIn
+function acceptInvite() {
+  const acceptButtons = document.querySelectorAll('[data-control-name="accept"]');
+  acceptButtons[0].click();
+
+  window.setTimeout(acceptInvite, 1000);
+}
+
+// Legacy LinkedIn
 function acceptInvites(loops) {
 
   function loadInvites() {
